@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct UIPlaygroundApp: App {
+    @StateObject var model: Model = Model()
+    @StateObject var selectedScrollVM: SelectedScrollViewModel = SelectedScrollViewModel()
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            TagTransitionsView()
         }
     }
 }
